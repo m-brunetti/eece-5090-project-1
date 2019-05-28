@@ -67,9 +67,10 @@ UMass Lowell}
 
 \begin{frame}{Device 1 -- Least Squares Fit}
     \begin{table}[]
+        \small
         \centering
         \begin{tabular}{c|c c c c c}
-            Potential (V) & $I_{ss} \left( \frac{A}{m} \right)$ & $A \left( \frac{A}{m} \right)$ & $\tau (fs^{-1})$ & $f ({GHz})$ & $\phi$ \\
+            Potential (V) & $I_{ss} \left( \frac{A}{m} \right)$ & $A \left( \frac{A}{m} \right)$ & $\tau (fs)$ & $f ({GHz})$ & $\phi$ \\
             0.0V & 0.019 & 2.535 & 21485.326 & 23.79e & 0.090 \\
             0.1V & 77.114 & 150.177 & 1445.860 & 28.13e & 14.427 \\
             0.5V & 290.489 & 121.998 & 1381.979 & 161.2 & -27.486 \\
@@ -219,6 +220,14 @@ UMass Lowell}
         \includegraphics[scale=0.5]{Figures/Device_3/SteadyState.png}
         \label{fig:dev_3_steady}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Future Work}
+    \begin{itemize}
+        \item Model steady state current vs channel voltage curve ($I_{ss}$ vs $V$)
+        \item Analyze other fit parameters dependence on channel voltage
+        \item Oscillations are not perfectly sinusoidal, analyze power spectrum and model with Fourier series?
+    \end{itemize}
 \end{frame}
  
 \end{document}
